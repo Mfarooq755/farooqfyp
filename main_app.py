@@ -1,3 +1,6 @@
+import subprocess
+import sys
+st.write(subprocess.run([sys.executable, "-m", "pip", "list"], capture_output=True, text=True).stdout)
 import streamlit as st
 import sqlite3
 import pandas as pd
@@ -421,3 +424,4 @@ else:
         login_page()
     elif page == "Signup":
         signup_page()
+
