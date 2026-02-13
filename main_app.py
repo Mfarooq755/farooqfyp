@@ -1,10 +1,7 @@
 import streamlit as st
-import subprocess
-import sys
-st.write(subprocess.run([sys.executable, "-m", "pip", "list"], capture_output=True, text=True).stdout)
 import sqlite3
 import pandas as pd
-import opencv-python
+import cv2
 from ultralytics import YOLO
 from PIL import Image
 import numpy as np
@@ -424,6 +421,7 @@ else:
         login_page()
     elif page == "Signup":
         signup_page()
+
 
 
 
