@@ -1,8 +1,0 @@
-streamlit
-opencv-python-headless
-numpy
-pandas
-easyocr
-ultralytics
-torch==2.2.2
-torchvision==0.17.2
